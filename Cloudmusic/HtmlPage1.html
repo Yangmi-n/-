@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="kuangjia/jquery-1.12.4.js"></script>
+    <script src="kuangjia/message.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        #top > li:hover {
+            background-color: none;
+        }
+
+        #top > li ~ li:hover {
+            width: 70px;
+            background-color: rgba(0,0,0,0.3);
+            padding: 0px 10px;
+        }
+
+        #top > li > a:hover {
+            display: inline-block;
+            width: 70px;
+            height: 60px;
+            color: white;
+        }
+        #box {
+            width: 1530px;
+            height: 1210px;
+            background-color: #2e2133;
+            margin: 0px auto;
+        }
+        #bottom {
+            width: 1200px;
+            height: 700px;
+            margin-top: -70px;
+            margin: -70px auto;
+         
+        }
+            #bottom ul {
+                list-style: none;
+                border-top: 1px solid #999;
+                height: 350px;
+                overflow-x: auto;
+                background-image: url('image/normal-breadcrumb.jpg');
+                background-repeat:no-repeat;
+                background-size:1530px 350px;
+               
+            }
+
+            #bottom span {
+                font-weight: bolder;
+                font-size: 12px;
+                color: #999;
+            }
+
+            #bottom >ul>li {
+                border-bottom: 1px dashed #666;
+                line-height: 20px;
+            }
+
+        form {
+            margin-top: 10px;
+            border-top: 1px solid #999;
+            
+            opacity:0.7;
+        }
+
+        label {
+            display: block;
+            line-height: 20px;
+            font-weight: bolder;
+            cursor: pointer;
+            background-color: #999;
+            color: #fff;
+            margin: 5px 0;
+            padding-left: 5px;
+            width: 100%;
+            border: 1px solid purple;
+        }
+
+        .text {
+            width: 100%;
+            font-size: 12px;
+            outline-color: #39C;
+            border: 1px solid yellow;
+        }
+
+        input[type="button"] {
+            display: block;
+            margin-top: 3px;
+            border: 1px solid #666;
+            padding: 2px 5px;
+            width: 100%;
+            opacity:0.3;
+   
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="top">
+            <li style="margin-left:200px;margin-right:120px;background-color:none"><img src="image/logo.png" /></li>
+            <li><a href="WebForm3.aspx">&nbsp;&nbsp;&nbsp;主 页</a></li>
+            <li><a href="WebForm4.aspx">&nbsp;&nbsp;&nbsp;作 品 </a></li>
+            <li><a href="HtmlPage1.html">&nbsp;留 言 板</a></li>
+            <li><a href="WebForm5.aspx">友情链接</a></li>
+            <li><a href="WebForm6.aspx">本站论坛</a></li>
+        </ul>
+        <span style="margin-left:200px;margin-right:-15px;float:left;line-height:60px;height:60px;">
+            <a href="WebForm1.aspx">
+                <img src="image/denglu.gif" />
+            </a>
+        </span>
+        <span style="line-height:60px;height:60px;margin-left:40px;">
+            <a href="WebForm8.aspx">
+                <img src="image/zhuce.gif" />
+            </a>
+        </span>
+        <div id="middle">
+        </div>
+
+        <div id="bottom">
+            <h1 style="color: #999; text-align: center">欢迎来到留言板</h1>
+            <br />
+            <ul>
+                <li>
+                    <span>动漫博客</span>
+                    <p style="color:#999;">欢迎你&nbsp;&nbsp;&nbsp;<input type="button" value="编辑" />&nbsp;&nbsp;&nbsp;<input type="button" value="删除" /></p>
+                </li>
+            </ul>
+            <form method="post">
+                <h2 style="color:white">Message</h2>
+                <label for="Name">昵称</label>
+                <input type="text" name="Name" class="text" value="你的昵称" />
+                <label for="Content">留言内容</label>
+                <textarea name="Content" class="text" rows="4">你要说的话</textarea>
+                <input type="button" value="单击这里提交留言" style="font-size:17px;" />
+            </form>
+        </div>
+        <div style="margin-top:100px;text-align:center">
+            <img src="image/index.htm_txt_bsak.gif" width="900" height="40" />
+            <img src="image/tigone.gif" width="1530" />
+        </div>
+    </div>
+</body>
+</html>

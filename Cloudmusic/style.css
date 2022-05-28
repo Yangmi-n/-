@@ -1,0 +1,54 @@
+﻿
+    *{
+    margin:0px auto;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*#box {
+    width: 1530px;
+    height: 3450px;
+    background-color: #2e2133;
+    margin: 0px auto;
+}*/
+
+#top {
+    height: 60px;
+    float:left;
+}
+
+    #top > li {
+        padding: 0px 10px;
+        font-size: 17px;
+        margin-left: 40px;
+        height: 60px;
+        width: 70px;
+        line-height: 60px;
+        float: left;
+
+       
+    }
+  #top>li:hover {
+            background-color:none;
+        }
+       
+            #top > li > a {
+            color: white;
+
+            }
+
+         
+
+#middle {
+    width: 1530px;
+    height: 385px;
+    line-height:300px;
+    font-size:15px;
+    clear:left;
+    color:white;
+    text-align:center;
+    background-image: url("image/bb.jpg");
+    background-repeat: no-repeat;
+       background-size:1530px 285px;
+}
